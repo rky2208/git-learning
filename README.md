@@ -92,8 +92,8 @@ An event that takes place when Git is unable to automatically resolves differenc
 
 # UNDOING CHANGES
 CASE 1: staged changes
-- git reset <file-name> // undo particular file
-- get reset // undo all file
+- git reset <file-name> // unstaged particular file
+- get reset // unstaged all file
 
 CASE 2: commited changes (for 1 commit)
 - git reset HEAD~1 // undo the latest commit
