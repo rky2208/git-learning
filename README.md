@@ -7,20 +7,20 @@
     - is a website that allows developers to store and manage their code into REPOSITORY(FOLDER) using Git.
 
 # GIT CONFIGURE & SETUP
-step 1: Create Git hub account https://github.com/
-step 2: Check into your sytem on cmd line weather git is intalled or not
+- step 1: Create Git hub account https://github.com/
+- step 2: Check into your sytem on cmd line weather git is intalled or not
         - git --version (If not display any version then follow step:3)
-step 3: Install Required s/w
+- step 3: Install Required s/w
         - GIT BASH (WINDOW) : git-scm.com
         - TERMINAL (MAC)
         - VISUAL STUDIO (Can choose other editor as well)
-step 2: set the user creds into your system [Set Globaly if you will be using same creds for the projects]
+- step 4: set the user creds into your system [Set Globaly if you will be using same creds for the projects]
         git config --globally user.name "Rajesh Kumar"
         git config --globally user.email "test@gmail.com"
         git config --list [To check the configuration]
 
         NOTE: Prefer to use the same user name and email creds of the github account
-step 3: Create Repository (Folder)
+step 4: Create Repository (Folder)
 
 # CLONE THE REPO to you Local machine
 // for ssh you have to setup the ssh key into your system, so for the beginner proceed with https
