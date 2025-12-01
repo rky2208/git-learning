@@ -24,7 +24,7 @@ step 4: Create Repository (Folder)
 
 # CLONE THE REPO to you Local machine
 // for ssh you have to setup the ssh key into your system, so for the beginner proceed with https
-- # git clone <!--ssh url or https url of the repo -->
+- ```git clone <!--ssh url or https url of the repo -->```
 
 # GIT BASIC COMMANDS
 -  ```git add <!-- File Name ---> // To staged the particular new /changed file```
