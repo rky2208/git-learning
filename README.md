@@ -27,44 +27,44 @@ step 4: Create Repository (Folder)
 - # git clone <!--ssh url or https url of the repo -->
 
 # GIT BASIC COMMANDS
-- # git add <!-- File Name ---> // To staged the particular new /changed file
+-  ```git add <!-- File Name ---> // To staged the particular new /changed file```
 
-- # git add . // To staged all the new and modified file 
+- ```git add . // To staged all the new and modified file ```
 
-- # git status  // to check the status of the code
+- ```git status  // to check the status of the code```
     - untracked: New files that git doesn't yet tracked.
     - modified: Changes into the existing files that git already tracked
     - staged:   Changed files ready to commit
     - unmodified: No changes in the code
 
-- # git commit -m "<!-- meaningful commit message-->" // Commit is the record of the changes
+- ```git commit -m "<!-- meaningful commit message-->" // Commit is the record of the changes```
 
-- # git push origin main //upload local repo content to remote repo, here origin is the default repo name , main is the branch name
+- ```git push origin main //upload local repo content to remote repo, here origin is the default repo name , main is the branch name```
 
 # Now IF you want to create your local folder as local repo and push this local repo changes to remote repo the follow the below commands
 - create the a repo to your git hub account and copy the ssh/https url of the repo
 
 // to make the your local folder as local remote, you can check if .git exist or not using ls -a command on mac 
-- git init 
+- ```git init ```
 
 // to add/connet  the remote repo to local remote
-- git remote add origin <!--repo ssh/https url -->
-- git remote -v // to verify the the remote
-- git branch // to check the current branch i.e default main
-- git branch -M central // to rename the branch to central if you want
+- ```git remote add origin <!--repo ssh/https url -->```
+- ```git remote -v // to verify the the remote```
+- ```git branch // to check the current branch i.e default main```
+- ```git branch -M central // to rename the branch to central if you want```
 
 // follow the basic command to staged and commit the changes
 
 // push the local changes commit to main branch
-- git push origin main
+- ```git push origin main```
 
 
 # Branch Commands
-- git branch // to check the current branch name
-- git branch -M central // to rename the current branch to central 
-- git checkout <!--branch-name> // navigate to the other branch
-- git checkout -b <!--branch-name> // create a new branch from the current branch with same content
-- git branch -d <!--branch-name> // to delete the branch [YOu have to be on other branch to delete the branch, else you can't delete the current branch]
+- ```git branch // to check the current branch name```
+- ```git branch -M central // to rename the current branch to central ```
+- ```git checkout <!--branch-name> // navigate to the other branch```
+- ```git checkout -b <!--branch-name> // create a new branch from the current branch with same content```
+- ```git branch -d <!--branch-name> // to delete the branch [YOu have to be on other branch to delete the branch, else you can't delete the current branch]```
 
 # MERGING CODES
 - If you want to merge the code of feature-branch to main-branch
@@ -73,33 +73,33 @@ step 4: Create Repository (Folder)
 
 - Approach-2
     - using command lines
-    - # git diff main //  to compare the commit/branches/files of the current branch i.e feature with main
+    - ```git diff main //  to compare the commit/branches/files of the current branch i.e feature with main```
 
-    - # git merge main // merge the feature branch with main (main codes coming to feature)
+    - ```git merge main // merge the feature branch with main (main codes coming to feature)```
 
 
 # PULLING THE CODES 
-- git pull origin main // used to fetch and download content from an remote repo {in this case i want to fetch and download from main to the local repo of feature branch} and immediately update the current local repo to match the content
+- ```git pull origin main // used to fetch and download content from an remote repo {in this case i want to fetch and download from main to the local repo of feature branch} and immediately update the current local repo to match the content```
 
 
 # RESOLIVING MERGE CONFLICTS
 An event that takes place when Git is unable to automatically resolves differences in code b/w two commits
 - we have to resolve it manually
-    - git merge main 
+    - ```git merge main ```
 - after the resolving manually, commit the new changes and push
-    - git commit - "message"
-    - git push origin main
+    - ```git commit - "message"```
+    - ```git push origin main```
 
 # UNDOING CHANGES
 CASE 1: staged changes
-- git reset <file-name> // unstaged particular file
-- get reset // unstaged all file
+- ```git reset <file-name> // unstaged particular file```
+- ```get reset // unstaged all file```
 
 CASE 2: commited changes (for 1 commit)
-- git reset HEAD~1 // undo the latest commit
+- ```git reset HEAD~1 // undo the latest commit```
 
 CASE 3: commited changes (for many commits)
 find the commit-hash using: git log
-- git reset <commit-hash> // undo all the commits upto that commit hash
-- git reset --hard <commit-hash> // undo all the commits upto that commit hash also remove the change locally as well
+- ```git reset <commit-hash> // undo all the commits upto that commit hash```
+- ```git reset --hard <commit-hash> // undo all the commits upto that commit hash also remove the change locally as well```
 
